@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 '''
-Orphaned N1K DVS removal - bperove@vmware.com
+Orphaned N1K DVS removal - benperove@gmail.com
 '''
 
 import re
