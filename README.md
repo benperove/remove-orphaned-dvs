@@ -38,7 +38,7 @@ Remove Orphaned N1K DVS
 * Would you like to edit the configuration? (yes/no) [n]: n
 * Use this configuration and save it? (yes/no) [y]: y
 
-2. Proceed with "Remove Orphaned DVS" section, step 5.
+222 Proceed with "Remove Orphaned DVS" section, step 5.
 
 ## Adding Temporary User
 
@@ -56,7 +56,6 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQD1OyPq7qIxN4pYPPsgg/5FPu3HPDlw2+sS8dM25883
 ```
 
 4. Copy the output exactly, making sure to avoid extra spaces, carriage returns, etc.
-
 5. On VSM, run (making sure to have pasted the key from the host after the line "username tempuser sshkey" per example):
 ```
 conf t
@@ -70,30 +69,21 @@ username tempuser sshkey ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQD1OyPq7qIxN4pYPPs
 ## Delete Extension Key in VC MOB
 
 1. Make note of the extension key on the orphaned DVS's summary tab in VC. (ctrl+shift+n > click the orphaned DVS > copy key from the notes section) It will resemble something like Cisco_Nexus_1000V_792243929.
-
 2. Point a browser to the VC MOB: https://1.2.3.4/mob
-
 3. Login as administrator, or an account with adequate credentials
-
 4. Click content > ExtensionManager > UnregisterExtension
-
 5. Paste the extension key (from step 1) without quotation marks and click Invoke Method (If successful, you'll notice "Method Invocation Result: void" appear on the window in bold letters.) Close MOB windows. If the DVS was previously removed, you're done! Otherwise, proceed to step 6.
-
 6. Proceed with "Configure & Run Script on Host" section
 
 ## Configure & Run Script on Host
 
 1. [Download python script](https://raw.github.com/benperove/remove-orphaned-dvs/master/remove-orphaned-dvs.py)
-
 2. Open script in your favorite text editor and configure USER variables (make sure to use the extension key from Delete Extension Key in VC MOB section, step 1)
-
 3. Copy script to host via SCP or datastore browser
-
 4. SSH to host and make script executable: 
 ```
 chmod a+x /path/to/remove-orphaned-dvs.py
 ```
-
 5. Execute: 
 ```
 ./remove-orphaned-dvs.py -k
@@ -105,19 +95,13 @@ chmod a+x /path/to/remove-orphaned-dvs.py
 ./remove-orphaned-dvs.py -d
 ```
 8. Confirm orphaned DVS is no longer present in VC inventory
-
 9. Proceed with "Delete Extension Key in VC MOB" section
 
 ## Add Extension Key in VC
 
 1. Point a browser to the VSM IP address: http://4.3.2.1
-
 2. Right click the "cisco_nexus_1000v_extension.xml" and save the file to the Desktop
-
 3. From the VC Plug-ins menu, click Manage Plug-ins...
-
 4. Right click in white space below Available Plug-ins and choose New Plug-in...
-
 5. Browse for cisco_nexus_1000v_extension.xml (from step 2) and choose Open > Register Plug-in > Ignore (Security warning) > OK (Success window) > Close (Manage Plug-ins window)
-
 6. Proceed with "Configure & Run Script on Host" section, step 7
