@@ -54,7 +54,8 @@ Adding Temporary User
 3. On host, run: cat /etc/ssh/ssh_host_rsa_key.pub
 
 Example:
-```# cat /etc/ssh/ssh_host_rsa_key.pub
+```
+# cat /etc/ssh/ssh_host_rsa_key.pub
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQD1OyPq7qIxN4pYPPsgg/5FPu3HPDlw2+sS8dM25883olxP2/JeY/Ta4v+qZctFqDAKCfGVugiS+pRAgpa2t6LqGM54zzv6fgI1pPuZs5m3Smcb2SoAr/LHzC7Sy9yuBRGlC3tp2/ybKZEZQGhc4fH4NIrpIn1rhyH8Lu0f9D+3xQoFSE6Jcg2A1V5rpa+XteSfmR5BsuVpmSWFBzGni9XUOwPgUhyX7vI42uaWtIdGlE6tEHaaSCGHGiGB0bmtlzV6MFrCQS9S++oXKX1Fll1Dq+E+wri/6Lc8ihEIpyPsSLbIaI7EN2Rsef88usZSchgpmwPzjH0TskYjxVy34RwZ
 ```
 
