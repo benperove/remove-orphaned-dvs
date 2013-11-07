@@ -44,11 +44,8 @@ Remove Orphaned N1K DVS
 
 1. SSH into VSM
 2. SSH into an ESX host
-3. On ESX host, run:
+3. On ESX host, run: ```cat /etc/ssh/ssh_host_rsa_key.pub```
 
-```
-cat /etc/ssh/ssh_host_rsa_key.pub
-```
 Example:
 ```
 cat /etc/ssh/ssh_host_rsa_key.pub
@@ -81,20 +78,10 @@ username tempuser sshkey ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQD1OyPq7qIxN4pYPPs
 1. [Download python script](https://raw.github.com/benperove/remove-orphaned-dvs/master/remove-orphaned-dvs.py)
 2. Open script in your favorite text editor and configure USER variables (make sure to use the extension key from Delete Extension Key in VC MOB section, step 1)
 3. Copy script to host via SCP or datastore browser
-4. SSH to host and make script executable: 
-```
-chmod a+x /path/to/remove-orphaned-dvs.py
-```
-5. Execute: 
-```
-./remove-orphaned-dvs.py -k
-```
+4. SSH to host and make script executable: ```chmod a+x /path/to/remove-orphaned-dvs.py```
+5. Execute: ```./remove-orphaned-dvs.py -k```
 6. Proceed with "Add Extension Key in VC" section
-
-7. Execute:
-```
-./remove-orphaned-dvs.py -d
-```
+7. Execute: ```./remove-orphaned-dvs.py -d```
 8. Confirm orphaned DVS is no longer present in VC inventory
 9. Proceed with "Delete Extension Key in VC MOB" section
 
