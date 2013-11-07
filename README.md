@@ -18,9 +18,7 @@ Remove Orphaned N1K DVS
 1. Answer the following configuration options:
 
 * Enter the password for "admin":
-
 * Confirm the password for "admin":
-
 * Enter HA role[standalone/primary/secondary]: standalone
 
 * Enter the domain id<1-4095>: 999
