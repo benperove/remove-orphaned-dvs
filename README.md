@@ -1,7 +1,7 @@
-remove-orphaned-dvs
+Remove Orphaned DVS
 ===================
 
-Accidentally nuke your VSM and can't get rid of the DVS remnants in VC? This script is what you need.
+Accidentally nuke your VSM and can't get rid of the N1K remnants in VC? This script is what you need.
 
 1. Deploy a new OVF template and point to the desired VSM OVA file (e.g. VSM/Install/nexus-1000v.4.2.1.SV2.2.1a.ova in the archive).
 
