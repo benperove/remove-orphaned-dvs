@@ -3,15 +3,18 @@ remove-orphaned-dvs
 
 Accidentally nuke your VSM and can't get rid of the DVS remnants in VC? This script is what you need.
 
-If you have an orphaned DVS (i.e. the original VSM was destroyed) there is only one way to remove it.
-
 Remove Orphaned DVS
 
 1. Deploy a new OVF template and point to the desired VSM OVA file (e.g. VSM/Install/nexus-1000v.4.2.1.SV2.2.1a.ova in the archive).
+
 2. Hit Next > Next > Accept > Next > type "tempvsm" and choose the correct datacenter, Next > choose Manually Configure Nexus 1000V, Next > choose a cluster, Next > choose host, Next > choose datastore, Next > Next > choose the correct network label for the Management interface only, Next > don't configure any settings yet, Next > Finish
+
 3. Edit the new VSM's settings and disconnect network adapters 1 and 3
+
 4. Power up the new VSM and proceed with "Configure Temporary VSM" section
+
 5. SSH to the VSM's configured IP address
+
 6. Proceed with "Adding Temporary User" section
 
 Configure Temporary VSM
