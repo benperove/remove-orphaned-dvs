@@ -2,15 +2,10 @@ Remove Orphaned N1K DVS
 =======================
 
 1. Deploy a new OVF template and point to the desired VSM OVA file (e.g. VSM/Install/nexus-1000v.4.2.1.SV2.2.1a.ova in the archive).
-
 2. Hit Next > Next > Accept > Next > type "tempvsm" and choose the correct datacenter, Next > choose Manually Configure Nexus 1000V, Next > choose a cluster, Next > choose host, Next > choose datastore, Next > Next > choose the correct network label for the Management interface only, Next > don't configure any settings yet, Next > Finish
-
 3. Edit the new VSM's settings and disconnect network adapters 1 and 3
-
 4. Power up the new VSM and proceed with "Configure Temporary VSM" section
-
 5. SSH to the VSM's configured IP address
-
 6. Proceed with "Adding Temporary User" section
 
 ## Configure Temporary VSM
@@ -20,49 +15,27 @@ Remove Orphaned N1K DVS
 * Enter the password for "admin":
 * Confirm the password for "admin":
 * Enter HA role[standalone/primary/secondary]: standalone
-
 * Enter the domain id<1-4095>: 999
-
 * Would you like to enter the basic configuration dialog (yes/no): yes
-
 * Create another login account (yes/no) [n]: n
-
 * Configure read-only SNMP community string (yes/no) [n]: n
-
 * Configure read-write SNMP community string (yes/no) [n]: n
-
 * Enter the switch name :
-
 * Continue with Out-of-band (mgmt0) management configuration? (yes/no) [y]: y
-
 * Mgmt0 IPv4 address : 10.21.16.39
-
 * Mgmt0 IPv4 netmask : 255.255.252.0
-
 * Configure the default gateway? (yes/no) [y]: y
-
 * IPv4 address of the default gateway : 10.21.19.254
-
 * Configure advanced IP options? (yes/no) [n]: n
-
 * Enable the telnet service? (yes/no) [n]: n
-
 * Enable the ssh service? (yes/no) [y]: y
-
 * Type of ssh key you would like to generate (dsa/rsa) [rsa]: rsa
-
 * Number of rsa key bits <768-2048> [1024]: 1024
-
 * Enable the http-server? (yes/no) [y]: y
-
 * Configure the ntp server? (yes/no) [n]: n
-
 * VEN feature level will be set to 4.2(1)SV2(1.1), Do you want to reconfigure? (yes/no) [n]: n
-
 * Configure svs domain parameters? (yes/no) [y]: n
-
 * Would you like to edit the configuration? (yes/no) [n]: n
-
 * Use this configuration and save it? (yes/no) [y]: y
 
 2. Proceed with "Remove Orphaned DVS" section, step 5.
@@ -70,7 +43,6 @@ Remove Orphaned N1K DVS
 ## Adding Temporary User
 
 1. SSH into VSM
-
 2. SSH into an ESX host
 
 3. On ESX host, run: 
