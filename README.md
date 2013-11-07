@@ -1,5 +1,5 @@
-Remove Orphaned DVS
-===================
+Remove Orphaned N1K DVS
+=======================
 
 1. Deploy a new OVF template and point to the desired VSM OVA file (e.g. VSM/Install/nexus-1000v.4.2.1.SV2.2.1a.ova in the archive).
 
