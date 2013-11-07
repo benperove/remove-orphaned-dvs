@@ -38,13 +38,13 @@ Remove Orphaned N1K DVS
 * Would you like to edit the configuration? (yes/no) [n]: n
 * Use this configuration and save it? (yes/no) [y]: y
 
-222 Proceed with "Remove Orphaned DVS" section, step 5.
+2. Proceed with "Remove Orphaned DVS" section, step 5.
 
 ## Adding Temporary User
 
 1. SSH into VSM
 2. SSH into an ESX host
-3. On ESX host, run: 
+3. On ESX host, run:
 ```
 cat /etc/ssh/ssh_host_rsa_key.pub
 ```
