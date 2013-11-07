@@ -45,6 +45,7 @@ Remove Orphaned N1K DVS
 1. SSH into VSM
 2. SSH into an ESX host
 3. On ESX host, run:
+
 ```
 cat /etc/ssh/ssh_host_rsa_key.pub
 ```
@@ -56,6 +57,7 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQD1OyPq7qIxN4pYPPsgg/5FPu3HPDlw2+sS8dM25883
 
 4. Copy the output exactly, making sure to avoid extra spaces, carriage returns, etc.
 5. On VSM, run (making sure to have pasted the key from the host after the line "username tempuser sshkey" per example):
+
 ```
 conf t
 username tempuser role network-admin
