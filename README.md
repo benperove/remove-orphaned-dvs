@@ -77,11 +77,11 @@ Use this configuration and save it? (yes/no) [y]: y
 
 2. SSH into an ESX host
 
-3. On host, run: 
+3. On ESX host, run: 
 ```
 cat /etc/ssh/ssh_host_rsa_key.pub
 ```
-### Example:
+Example:
 ```
 # cat /etc/ssh/ssh_host_rsa_key.pub
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQD1OyPq7qIxN4pYPPsgg/5FPu3HPDlw2+sS8dM25883olxP2/JeY/Ta4v+qZctFqDAKCfGVugiS+pRAgpa2t6LqGM54zzv6fgI1pPuZs5m3Smcb2SoAr/LHzC7Sy9yuBRGlC3tp2/ybKZEZQGhc4fH4NIrpIn1rhyH8Lu0f9D+3xQoFSE6Jcg2A1V5rpa+XteSfmR5BsuVpmSWFBzGni9XUOwPgUhyX7vI42uaWtIdGlE6tEHaaSCGHGiGB0bmtlzV6MFrCQS9S++oXKX1Fll1Dq+E+wri/6Lc8ihEIpyPsSLbIaI7EN2Rsef88usZSchgpmwPzjH0TskYjxVy34RwZ
@@ -115,20 +115,27 @@ username tempuser sshkey ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQD1OyPq7qIxN4pYPPs
 
 ## Configure & Run Python Script on Host
 
-1. Download python script: https://github.com/benperove/scripts/remove-orphaned-dvs.py
+1. [Download python script](https://raw.github.com/benperove/remove-orphaned-dvs/master/remove-orphaned-dvs.py)
 
 2. Open script in your favorite text editor and configure USER variables (make sure to use the extension key from Delete Extension Key in VC MOB section, step 1)
 
 3. Copy script to host via SCP or datastore browser
 
-4. SSH to host and make script executable: chmod a+x /path/to/remove-orphaned-dvs.py
+4. SSH to host and make script executable: 
+```
+chmod a+x /path/to/remove-orphaned-dvs.py
+```
 
-5. Execute: ./remove-orphaned-dvs.py -k
-
+5. Execute: 
+```
+./remove-orphaned-dvs.py -k
+```
 6. Proceed with "Add Extension Key in VC" section
 
-7. Execute: ./remove-orphaned-dvs.py -d
-
+7. Execute:
+```
+./remove-orphaned-dvs.py -d
+```
 8. Confirm orphaned DVS is no longer present in VC inventory
 
 9. Proceed with "Delete Extension Key in VC MOB" section
