@@ -12,31 +12,31 @@ Remove Orphaned N1K DVS
 
 1. Answer the following configuration options:
 
-* Enter the password for "admin": **<enter>**
-* Confirm the password for "admin": **<enter>**
+* Enter the password for "admin": **[enter]**
+* Confirm the password for "admin": **[enter]**
 * Enter HA role[standalone/primary/secondary]: **standalone**
 * Enter the domain id<1-4095>: **999**
 * Would you like to enter the basic configuration dialog (yes/no): **yes**
-* Create another login account (yes/no) [n]: **<enter>**
-* Configure read-only SNMP community string (yes/no) [n]: **<enter>**
-* Configure read-write SNMP community string (yes/no) [n]: **<enter>**
-* Enter the switch name : **<enter>**
-* Continue with Out-of-band (mgmt0) management configuration? (yes/no) [y]: **<enter>**
+* Create another login account (yes/no) [n]: **[enter]**
+* Configure read-only SNMP community string (yes/no) [n]: **[enter]**
+* Configure read-write SNMP community string (yes/no) [n]: **[enter]**
+* Enter the switch name : **[enter]**
+* Continue with Out-of-band (mgmt0) management configuration? (yes/no) [y]: **[enter]**
 * Mgmt0 IPv4 address : **10.21.16.39**
 * Mgmt0 IPv4 netmask : **255.255.252.0**
-* Configure the default gateway? (yes/no) [y]: **<enter>**
+* Configure the default gateway? (yes/no) [y]: **[enter]**
 * IPv4 address of the default gateway : **10.21.19.254**
-* Configure advanced IP options? (yes/no) [n]: **<enter>**
-* Enable the telnet service? (yes/no) [n]: **<enter>**
-* Enable the ssh service? (yes/no) [y]: **<enter>**
-* Type of ssh key you would like to generate (dsa/rsa) [rsa]: **<enter>**
-* Number of rsa key bits <768-2048> [1024]: **<enter>**
-* Enable the http-server? (yes/no) [y]: **<enter>**
-* Configure the ntp server? (yes/no) [n]: **<enter>**
-* VEN feature level will be set to 4.2(1)SV2(1.1), Do you want to reconfigure? (yes/no) [n]: **<enter>**
+* Configure advanced IP options? (yes/no) [n]: **[enter]**
+* Enable the telnet service? (yes/no) [n]: **[enter]**
+* Enable the ssh service? (yes/no) [y]: **[enter]**
+* Type of ssh key you would like to generate (dsa/rsa) [rsa]: **[enter]**
+* Number of rsa key bits <768-2048> [1024]: **[enter]**
+* Enable the http-server? (yes/no) [y]: **[enter]**
+* Configure the ntp server? (yes/no) [n]: **[enter]**
+* VEN feature level will be set to 4.2(1)SV2(1.1), Do you want to reconfigure? (yes/no) [n]: **[enter]**
 * Configure svs domain parameters? (yes/no) [y]: **n**
-* Would you like to edit the configuration? (yes/no) [n]: **<enter>**
-* Use this configuration and save it? (yes/no) [y]: **<enter>**
+* Would you like to edit the configuration? (yes/no) [n]: **[enter]**
+* Use this configuration and save it? (yes/no) [y]: **[enter]**
 
 2. Proceed with "Remove Orphaned DVS" section, step 5.
 
