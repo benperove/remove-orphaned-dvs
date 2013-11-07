@@ -17,55 +17,55 @@ Remove Orphaned DVS
 
 1. Answer the following configuration options:
 
-Enter the password for "admin":
+* Enter the password for "admin":
 
-Confirm the password for "admin":
+* Confirm the password for "admin":
 
-Enter HA role[standalone/primary/secondary]: standalone
+* Enter HA role[standalone/primary/secondary]: standalone
 
-Enter the domain id<1-4095>: 999
+* Enter the domain id<1-4095>: 999
 
-Would you like to enter the basic configuration dialog (yes/no): yes
+* Would you like to enter the basic configuration dialog (yes/no): yes
 
-Create another login account (yes/no) [n]: n
+* Create another login account (yes/no) [n]: n
 
-Configure read-only SNMP community string (yes/no) [n]: n
+* Configure read-only SNMP community string (yes/no) [n]: n
 
-Configure read-write SNMP community string (yes/no) [n]: n
+* Configure read-write SNMP community string (yes/no) [n]: n
 
-Enter the switch name : switch
+* Enter the switch name :
 
-Continue with Out-of-band (mgmt0) management configuration? (yes/no) [y]: y
+* Continue with Out-of-band (mgmt0) management configuration? (yes/no) [y]: y
 
-Mgmt0 IPv4 address : 10.21.16.39
+* Mgmt0 IPv4 address : 10.21.16.39
 
-Mgmt0 IPv4 netmask : 255.255.252.0
+* Mgmt0 IPv4 netmask : 255.255.252.0
 
-Configure the default gateway? (yes/no) [y]: y
+* Configure the default gateway? (yes/no) [y]: y
 
-IPv4 address of the default gateway : 10.21.19.254
+* IPv4 address of the default gateway : 10.21.19.254
 
-Configure advanced IP options? (yes/no) [n]: n
+* Configure advanced IP options? (yes/no) [n]: n
 
-Enable the telnet service? (yes/no) [n]: n
+* Enable the telnet service? (yes/no) [n]: n
 
-Enable the ssh service? (yes/no) [y]: y
+* Enable the ssh service? (yes/no) [y]: y
 
-Type of ssh key you would like to generate (dsa/rsa) [rsa]: rsa
+* Type of ssh key you would like to generate (dsa/rsa) [rsa]: rsa
 
-Number of rsa key bits <768-2048> [1024]: 1024
+* Number of rsa key bits <768-2048> [1024]: 1024
 
-Enable the http-server? (yes/no) [y]: y
+* Enable the http-server? (yes/no) [y]: y
 
-Configure the ntp server? (yes/no) [n]: n
+* Configure the ntp server? (yes/no) [n]: n
 
-Vem feature level will be set to 4.2(1)SV2(1.1), Do you want to reconfigure? (yes/no) [n]: n
+* VEN feature level will be set to 4.2(1)SV2(1.1), Do you want to reconfigure? (yes/no) [n]: n
 
-Configure svs domain parameters? (yes/no) [y]: n
+* Configure svs domain parameters? (yes/no) [y]: n
 
-Would you like to edit the configuration? (yes/no) [n]: n
+* Would you like to edit the configuration? (yes/no) [n]: n
 
-Use this configuration and save it? (yes/no) [y]: y
+* Use this configuration and save it? (yes/no) [y]: y
 
 2. Proceed with "Remove Orphaned DVS" section, step 5.
 
@@ -109,9 +109,9 @@ username tempuser sshkey ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQD1OyPq7qIxN4pYPPs
 
 5. Paste the extension key (from step 1) without quotation marks and click Invoke Method (If successful, you'll notice "Method Invocation Result: void" appear on the window in bold letters.) Close MOB windows. If the DVS was previously removed, you're done! Otherwise, proceed to step 6.
 
-6. Proceed with "Configure & Run Python Script on Host" section
+6. Proceed with "Configure & Run Script on Host" section
 
-## Configure & Run Python Script on Host
+## Configure & Run Script on Host
 
 1. [Download python script](https://raw.github.com/benperove/remove-orphaned-dvs/master/remove-orphaned-dvs.py)
 
@@ -150,4 +150,4 @@ chmod a+x /path/to/remove-orphaned-dvs.py
 
 5. Browse for cisco_nexus_1000v_extension.xml (from step 2) and choose Open > Register Plug-in > Ignore (Security warning) > OK (Success window) > Close (Manage Plug-ins window)
 
-6. Proceed with "Configure & Run Python Script on Host" section, step 7
+6. Proceed with "Configure & Run Script on Host" section, step 7
