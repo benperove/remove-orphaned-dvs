@@ -44,7 +44,6 @@ Remove Orphaned N1K DVS
 
 1. SSH into VSM
 2. SSH into an ESX host
-
 3. On ESX host, run: 
 ```
 cat /etc/ssh/ssh_host_rsa_key.pub
