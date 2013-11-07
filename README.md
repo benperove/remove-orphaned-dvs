@@ -1,8 +1,6 @@
 Remove Orphaned DVS
 ===================
 
-Accidentally nuke your VSM and can't get rid of the N1K remnants in VC? This script is what you need.
-
 1. Deploy a new OVF template and point to the desired VSM OVA file (e.g. VSM/Install/nexus-1000v.4.2.1.SV2.2.1a.ova in the archive).
 
 2. Hit Next > Next > Accept > Next > type "tempvsm" and choose the correct datacenter, Next > choose Manually Configure Nexus 1000V, Next > choose a cluster, Next > choose host, Next > choose datastore, Next > Next > choose the correct network label for the Management interface only, Next > don't configure any settings yet, Next > Finish
@@ -15,7 +13,7 @@ Accidentally nuke your VSM and can't get rid of the N1K remnants in VC? This scr
 
 6. Proceed with "Adding Temporary User" section
 
-Configure Temporary VSM
+## Configure Temporary VSM
 
 1. Answer the following configuration options:
 
