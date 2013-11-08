@@ -17,7 +17,7 @@ vc_dc_name           = 'Datacenter'
 vc_extension_key     = 'Cisco_Nexus_1000V_792243929'
 vc_orphaned_dvs_name = 'switch'
 
-#SYSTEM variables - do not modify!!
+#SYSTEM variables - do not touch!!
 rsa_key              = '/etc/ssh/ssh_host_rsa_key'
 vsm_user             = 'tempuser'
 base_cmd             = 'ssh -oStrictHostKeyChecking=no -i '+rsa_key+' '+vsm_user+'@'+vsm_ip+' '
